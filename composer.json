@@ -1,0 +1,24 @@
+{
+    "name": "rubricate/arr",
+    "description": "Component for working with arrays",
+    "authors": [
+        {
+            "name": "Estefanio N Santos",
+            "email": "estefanions@gmail.com"
+        }
+    ],
+    "keywords": [
+        "rubricateframework",
+        "rubricatephp",
+        "array"
+    ],
+    "support": {
+        "docs"   : "https://rubricate.github.io/components/arr",
+        "source" : "https://github.com/rubricate/arr"
+    },
+    "autoload": {
+        "psr-4": {
+            "Rubricate\\Arr\\": "Rubricate/Arr/"
+        }
+    }
+}

@@ -1,0 +1,5 @@
+*.vim
+main.php
+tags
+nota/
+*bkp.*
