@@ -8,5 +8,10 @@ class StemArr implements IStemArr
     {
        return (!array_key_exists($key, $arr))? $null: $arr[$key];
     } 
+
+    public function keyCount($arr, $mode = 0)
+    {
+       return (!is_array($arr))? 0: count($arr, $mode);
+    } 
 }    
 

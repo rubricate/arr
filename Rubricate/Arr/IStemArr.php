@@ -2,7 +2,7 @@
 
 namespace Rubricate\Arr;
 
-interface IStemArr extends IGetArr
+interface IStemArr extends IGetArr, IKeyCount
 {
     
 }
