@@ -1,6 +1,7 @@
 {
     "name": "rubricate/arr",
     "description": "Component for working with arrays",
+    "license": "MIT",
     "authors": [
         {
             "name": "Estefanio N Santos",
