@@ -1,5 +1,7 @@
 <?php 
 
+declare(strict_types=1);
+
 namespace Rubricate\Arr;
 
 class StemArr implements IStemArr
@@ -15,7 +17,7 @@ class StemArr implements IStemArr
        return $arr[$key] ?? $null;
     } 
 
-    public function keyCount($arr, $mode = 0)
+    public function keyCount($arr, $mode = 0): int
     {
        return (!is_array($arr))? 0: count($arr, $mode);
     } 
