@@ -12,7 +12,7 @@ class StemArr implements IStemArr
             );
         }
 
-       return (!array_key_exists($key, $arr))? $null: $arr[$key];
+       return $arr[$key] ?? $null;
     } 
 
     public function keyCount($arr, $mode = 0)
