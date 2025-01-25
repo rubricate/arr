@@ -4,6 +4,6 @@ namespace Rubricate\Arr;
 
 interface IGetArr
 {
-    public function get($arr, $key, $default);
+    public function get(array $arr, string|int $key, mixed $default = null): mixed;
 }    
 

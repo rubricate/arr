@@ -4,6 +4,6 @@ namespace Rubricate\Arr;
 
 interface IKeyCount
 {
-    public function keyCount($arr, $mode = 0);    
+    public function keyCount(array $arr, int $mode = COUNT_NORMAL): int;
 }
 

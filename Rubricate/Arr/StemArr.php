@@ -6,20 +6,14 @@ namespace Rubricate\Arr;
 
 class StemArr implements IStemArr
 {
-    public function get($arr, $key, $null = null)
+    public function get(array $arr, string|int $key, mixed $default = null): mixed
     {
-        if(!is_array($arr)){
-            throw new \Exception(
-                'Oops! Expects parameter 1 to be array'
-            );
-        }
-
-       return $arr[$key] ?? $null;
+       return $arr[$key] ?? $default;
     } 
 
-    public function keyCount($arr, $mode = 0): int
+    public function keyCount(array $arr, int $mode = COUNT_NORMAL): int
     {
-       return (!is_array($arr))? 0: count($arr, $mode);
+       return count($arr, $mode);
     } 
 }    
 

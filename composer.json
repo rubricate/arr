@@ -14,7 +14,7 @@
         "array"
     ],
     "require": {
-        "php": ">=7.2"
+        "php": ">=8.0"
     },
     "support": {
         "docs"   : "https://rubricate.github.io/components/arr",
