@@ -44,5 +44,20 @@ class StemArr implements IStemArr
         return $arr;
     }
 
+    public function random(array $arr, int $num = 1): mixed
+    {
+        if (empty($arr) || $num < 1) {
+            return $num === 1 ? null : [];
+        }
+
+        $keys = array_rand($arr, min($num, count($arr)));
+
+        if (is_array($keys)) {
+            return array_map(fn($key) => $arr[$key], $keys);
+        }
+
+        return $arr[$keys];
+    }
+
 }    
 
