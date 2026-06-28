@@ -26,5 +26,11 @@ class StemArr implements IStemArr
 
         return false;
     }
+
+    public function isAssoc(array $arr): bool
+    {
+        return !array_is_list($arr);
+    }
+
 }    
 
