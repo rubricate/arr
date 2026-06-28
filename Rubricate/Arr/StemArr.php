@@ -38,5 +38,11 @@ class StemArr implements IStemArr
         return $arr;
     }
 
+    public function sortDesc(array $arr): array
+    {
+        arsort($arr);
+        return $arr;
+    }
+
 }    
 
