@@ -32,5 +32,11 @@ class StemArr implements IStemArr
         return !array_is_list($arr);
     }
 
+    public function sort(array $arr): array
+    {
+        asort($arr);
+        return $arr;
+    }
+
 }    
 
