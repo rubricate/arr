@@ -69,5 +69,18 @@ class StemArr implements IStemArr
         return array_diff_key($arr, array_flip($keys));
     }
 
+    public function flatten(array $arr): array
+    {
+        $result = [];
+        foreach ($arr as $item) {
+            if (is_array($item)) {
+                $result = array_merge($result, $this->flatten($item));
+                continue;
+            }
+            $result[] = $item;
+        }
+        return $result;
+    }
+
 }    
 
