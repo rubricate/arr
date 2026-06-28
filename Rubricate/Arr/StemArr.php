@@ -59,5 +59,10 @@ class StemArr implements IStemArr
         return $arr[$keys];
     }
 
+    public function only(array $arr, array $keys): array
+    {
+        return array_intersect_key($arr, array_flip($keys));
+    }
+
 }    
 
