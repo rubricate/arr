@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Rubricate\Arr;
 
-class SupportArr implements IStemArr
+class SupportArr implements ISupportArr
 {
     public function get(array $arr, string|int $key, mixed $default = null): mixed
     {
